@@ -280,8 +280,6 @@ commands = {
 }
 
 for i in commands:
-    print(i, commands[i])
-for i in commands:
     print(f"----------------------{i}---------------------------")
     subprocess.run(commands[i], shell=True, capture_output=True, text=True)
     with open('rnd.dat', 'r') as file:
